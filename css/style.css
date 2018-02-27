@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   background: white;
   font-family: 'Antic Slab', serif; }
 
@@ -30,6 +31,7 @@ main .background-start-page {
     opacity: 1; }
 
 main .content {
+  overflow-y: auto;
   width: 1200px;
   height: 500px;
   position: absolute;
@@ -39,3 +41,17 @@ main .content {
   padding: 10px;
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.2); }
+  main .content #slider {
+    display: table;
+    margin: 0 auto;
+    width: 100%; }
+    main .content #slider div {
+      max-width: 150px;
+      float: left;
+      margin: 10px; }
+      main .content #slider div p {
+        max-width: 100%;
+        overflow: hidden;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis; }

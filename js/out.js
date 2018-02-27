@@ -13867,11 +13867,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         _react2.default.createElement(
                                                 'div',
                                                 { className: 'content' },
-                                                _react2.default.createElement(
-                                                        'div',
-                                                        { id: 'slider' },
-                                                        this.props.children
-                                                )
+                                                this.props.children
                                         )
                                 );
                         }
@@ -27632,17 +27628,19 @@ var Photo = function (_React$Component) {
         );
       } else {
         return _react2.default.createElement(
-          'ul',
-          null,
+          'div',
+          { id: 'slider' },
           data.map(function (item) {
             return _react2.default.createElement(
               'div',
-              null,
-              _react2.default.createElement('img', { src: 'https://farm' + item.farm + '.staticflickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_q.jpg', alt: item.title }),
+              { key: item.id },
+              _react2.default.createElement('img', { src: 'https://farm' + item.farm + '.staticflickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_q.jpg' }),
               _react2.default.createElement(
-                'a',
-                { href: 'https://www.flickr.com/people/' + item.owner + '/' },
-                'nothinf'
+                'p',
+                null,
+                ' ',
+                item.title,
+                ' '
               )
             );
           })
