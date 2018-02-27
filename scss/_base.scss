@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background: white;
+    font-family: 'Antic Slab', serif;
+}
+
+main {
+
+.background-start-page {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+
+      &:after {
+
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,1,87,0.6);
+    opacity: 0.8;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+
+  }
+
+      &:hover:after {
+        background: rgba(0,0,0,0.6);
+        opacity: 1;
+
+      }
+
+}
+.content {
+
+    overflow-y: auto;
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -600px;
+    padding: 10px;
+    border: 1px solid white;
+    background: rgba(255,255,255, 0.2);
+
+
+              #slider {
+
+                  display: table;
+                  margin: 0 auto;
+                  width: 100%;
+
+
+                  div {
+
+                      max-width: 150px;
+                      float: left;
+                      margin: 10px;
+
+                      p {
+                          max-width: 100%;
+                          overflow: hidden;
+                          display: block;
+                          white-space: nowrap;
+                          text-overflow: ellipsis;
+
+                      }
+
+                  }
+
+              }
+
+
+      }
+
+}
